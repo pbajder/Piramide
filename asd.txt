@@ -1,0 +1,73 @@
+
+
+/*!-----EJEMPLOS CSS NO BORRAR
+h1{
+    font-size: 54px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: red;
+}
+
+header h2{
+color: blueviolet;
+}
+h2{
+    color: aqua;
+}
+
+.ranking h2{
+    color: green;
+}
+
+.parrafo-basico h2{
+    color: black;
+}
+
+.boton {
+    color: black;
+}
+caja
+display: inline-block; UBICACION LATERAL
+display: none; no muestra la caja
+
+boton whatsapp logo fijo
+main i{
+    font-size: 50px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+
+    CLASE FLEXBOX - 1H 27MIN
+
+CONTENEDOR PADRE
+display: flex;
+height: 100vh; viewport height al 100% es la altura de todo lo que se ve el navegador 
+jusfity content; el eje por default (X)
+align items; el eje contrario (Y)
+flex direction; xxx; Invierte el eje del Flexbox 
+
+flex-wrap: ajusta ubicacion por dispositivo
+
+
+GRIDS
+DECLARAR FILAS
+
+display: grid;
+grid-template-rows: 200px 200px 200px; ALTO
+grid-template-columns: 200px 200px 200px; ANCHO - UNIDADES DE MEDIDA
+FRACCIÓN 1fr 1fr 1fr; grid-template-columns: repeat (3, 1fr);
+AUTO - todas iguales
+PIXELS - No es responsive
+CADA CELDA ES UN DIV
+margin=gap
+row-gap;column-gap;
+
+
+LIBRERIAS - FRAMEWORK
+BOOTSTRAP
+
+
