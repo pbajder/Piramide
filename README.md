@@ -1,6 +1,6 @@
 # Piramide 
 <h1 align="center">Hi 👋, I'm Pablo</h1>
-<h3 align="center">Un vago de mil caravanas a punto de quedar a pie</h3>
+<h3 align="center">About.Me</h3>
 
 - 🔭 I’m currently working on **Piramide**
 
