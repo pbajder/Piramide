@@ -12,10 +12,8 @@
 
 <body> <!--todo lo visible-->
     <header>
-        <h1>PIRAMIDE LIBROS</h1>
-
-        <nav> <!--barra-->
-            <!--ul>li*5>a crea 5 eblaces con href-->
+        <!--barra
+        <nav> 
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/catalogo.html">Libros</a></li>
@@ -24,21 +22,53 @@
                 <li><a href="./pages/contactos.html">Contacto</a></li>
             </ul>
         </nav>
+        -->
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <h1>PIRAMIDE LIBROS</h1>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
 
+            <div class="nav-links">
+
+                <a href="./index.html">Inicio</a>
+                <a href="./pages/catalogo.html" target="_blank">Libros</a>
+                <a href="./pages/ranking.html"" target=" _blank">Ranking</a>
+                <a href="./pages/locales.html" target="_blank">Locales</a>
+                <a href="./pages/contactos.html" target="_blank">Contacto</a>
+
+            </div>
+        </div>
     </header>
     <main> <!--contenido principal - solo puede haber uno-->
         <section class="hero">
 
             <h2>Tu próxima aventura literaria</h2><!--jerarquia-->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro suscipit necessitatibus dolor quae
-                maiores omnis dolorum molestiae alias sit explicabo fugit provident odio, doloremque dolores qui
-                architecto cumque accusamus? Molestias!</p>
+
 
         </section>
         <section class="ranking">
-            <a href="./pages/ranking.html">
-                <h2>Los 100 Libros Más Leídos Este Mes</h2>
-            </a>
+            <div>
+                <a href="./pages/ranking.html">
+                    <h2>Los 100 Libros Más Leídos Este Mes</h2>
+                </a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
+                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
+                    et hic voluptatibus excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam earum
+                    corporis accusantium sed incidunt quibusdam aspernatur veniam! Consequatur repellendus saepe quo
+                    sint libero quia similique rerum, commodi delectus, quaerat ducimus. Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Autem nam nostrum odio, eveniet quisquam optio ex vero cum eaque.
+                    Minima alias totam, corporis maxime laboriosam harum sunt saepe neque repellat.</p>
+            </div>
             <a href="./pages/ranking.html"> <img src="./img/biblio.jpg" alt=""> </a>
 
         </section>

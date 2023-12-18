@@ -1,4 +1,5 @@
 
+<!--ul>li*5>a crea 5 eblaces con href-->
 
 /*!-----EJEMPLOS CSS NO BORRAR
 h1{
