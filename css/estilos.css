@@ -1,0 +1,43 @@
+/*! INDEX */
+.hero {
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh - 110px);
+  background-image: url("../img/camellov2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero h2 {
+    margin: 10px;
+    width: 90%;
+    color: chocolate;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 82px;
+    font-weight: 1200; }
+
+.ranking {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ranking div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .ranking div a {
+      text-decoration: none; }
+      .ranking div a h2 {
+        margin: 10px;
+        padding: 10px;
+        width: 80%;
+        color: chocolate;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 60px;
+        font-weight: 700; }
+    .ranking div p {
+      margin: 10px; }
+  .ranking a img {
+    height: 400px; }
