@@ -214,31 +214,6 @@ footer a {
 
 /*!-----Catalogo.html-----*/
 
-.cataGrilla {
-    margin: 40px;
-}
-
-.cataLibros {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
-    grid-gap: 10px;
-    color: #444;
-}
-
-.box {
-    background-image: url("../img/black.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 90%;
-    color: #fff;
-}
-
-
-/*---ranking.html----*/
-
 .grillaContenedor {
     width: 100%;
     height: calc(100vh -300px);
@@ -310,6 +285,37 @@ footer a {
 .rankingAside ul li a {
     text-decoration: none; 
 }
+
+.box {
+    background-image: url("../img/black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 90%;
+    color: #fff;
+}
+
+.asideConsulta {
+    margin: 10px;
+    width: 80%;
+}
+
+
+/*---ranking.html----*/
+
+main{
+    margin: 10px;
+}
+main h2{
+    color: rgb(246, 180, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+
 
 /*---locales.html----*/
 
