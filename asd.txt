@@ -72,3 +72,38 @@ LIBRERIAS - FRAMEWORK
 BOOTSTRAP
 
 
+PSEUDOCLAES
+
+.clase:hover {
+    atributo
+
+}
+
+.clase:active {
+    click
+
+}
+
+.enlace:link {
+    sin visitar
+
+}
+
+.enlace:visited {
+    visitado
+}
+
+EXEPTUAR ELEMENTO
+.clase div:not(xxx){
+    atributos
+}
+SELECCIONAR ELEMENTO SIN CLASE
+
+.cajas div:nth-child(xxx){
+    elemento o par impar 5n(multiplos)
+}
+
+PSEUDO ELEMENTOS
+::firstline
+
+
