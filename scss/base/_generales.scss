@@ -1,2 +1,41 @@
 /*! BOOTSTRAP no hace falta anidar pero SI LAS CLASES PARA CAMBIAR ESTILO */ 
 
+$colorPrincipal:rgb(246, 180, 97);
+$colorSecundario: #fff;
+$colorTerciario: chocolate;
+
+.tablaRanking {
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.cataTodos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 140px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

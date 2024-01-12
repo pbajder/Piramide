@@ -107,3 +107,47 @@ PSEUDO ELEMENTOS
 ::firstline
 
 
+SASS II 
+
+//!VARIABLES
+
+$color-principal: rgb(246, 180, 97);
+$color-secundario: #fff;
+$color-terciario: #000000;
+
+//!LISTAS
+
+$colores:chocolate,yellow,#444,green,red;
+$font-size:82px,60px,30px,20px,14px;
+
+//!OPEREACIONES
+
+$ancho: 720px;
+
+//! img { width:$ancho - 100px;}
+
+//!MAPAS Key - Value
+
+$boton:(
+    bkgBoton:black,
+    brdBoton:2px solid chocolate,
+    txtBoton: #fff,
+//! .boton{ backgroud-color: map-get($boton, bkgBoton);
+);
+
+//!EXTENDS 
+
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//!EJEMPLO 1
+
+.galeria{
+    background-color: red;
+    border: 2px solid black;
+    @extend %flexCenter;
+
+}

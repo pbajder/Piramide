@@ -1,54 +1,408 @@
 /*! INDEX */
 .hero {
-    padding: 10px;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 200px);
     background-image: url("../img/camellov2.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    h2{
-        margin: 10px;
+
+    h1 {
         width: 90%;
         color: chocolate;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 82px;
+        font-size: 78px;
         font-weight: 1200;
+
+        &:hover {
+            color: #fff;
+        }
 
     }
 }
-.ranking{
-    margin: 20px 0px 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        a{
-            text-decoration: none;
-            h2{
-                margin: 10px;
-                padding: 10px;
-                width: 80%;
-                color: chocolate;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 60px;
-                font-weight: 700;
 
+.novedades {
+    width: 100%;
+
+    div {
+        h2 {
+            margin-bottom: 10px;
+            color: white;
+            background-color: $colorPrincipal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+
+    .conteNovedades {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+
+        .listaNovedades {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 220px;
+            gap: 18px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #444;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-align: center;
+
+            img {
+                padding-top: 5px;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
-        p{
-          margin: 10px;
-        }      
     }
-    a{
-        img{
-            height: 400px;
+
+}
+
+.ranking {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            width: 100%;
+            color: white;
+            background-color: $colorPrincipal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: center;
         }
     }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        p {
+            width: 25%;
+            margin: 15px;
+            padding: 10px;
+            text-align: justify;
+            color: black;
+            background-color: rgba(255, 255, 0, 0.767);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.generos {
+    margin-top: 20px;
+
+    h2 {
+        color: white;
+        background-color: $colorPrincipal;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .conteGeneros {
+        margin: 10px;
+        display: grid;
+        grid-template-rows: repeat(2, 300px);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        div {
+            border: solid 2px chocolate;
+            border-radius: 10;
+
+            a {
+                text-decoration: none;
+
+                h3 {
+                    margin: 10px;
+                    color: black;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                img {
+                    padding: 10px;
+                    width: 320px;
+                    height: 240px;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+/*! CATALOGO */
+
+.grillaContenedor {
+    margin-top: 20px;
+    height: calc(100vh -300px);
+    padding: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 3(0.5fr 1.25fr 1.25fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "cataListado cataDestacados cataDestacados"
+        "cataListado cataSinfoto cataSinfoto"
+    ;
+    gap: 30px;
+
+    .cataDestacados {
+        grid-area: cataDestacados;
+
+        h1 {
+            color: rgb(246, 180, 97);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 44px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+    .cataSinfoto {
+        grid-area: cataSinfoto;
+
+        h3 {
+            color: rgb(246, 180, 97);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 42px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+
+    .cataListado {
+        grid-area: cataListado;
+
+        div {
+            h3 {
+                color: rgb(246, 180, 97);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                margin: 10px;
+                text-align: justify;
+            }
+        }
+
+        .asideGeneros {
+            ul {
+                margin-left: 5px;
+                padding: 10px;
+                list-style: none;
+                width: 90%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                background-color: rgb(246, 180, 97);
+
+                li {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 300;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+
+        div {
+            h3 {
+                color: rgb(246, 180, 97);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 34px;
+                font-weight: 500;
+                margin: 10px;
+                text-align: justify;
+            }
+        }
+
+        .asideConsulta {
+            margin: 10px;
+            width: 80%;
+
+            button {
+                margin-top: 10px;
+            }
+        }
+
+        .papelOnada {
+
+            h3 {
+                color: $colorPrincipal;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+                font-weight: 400;
+                margin: 10px;
+            }
+
+            p {
+                padding: 10px;
+                color: white;
+                background-color: #444;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+        }
+    }
+}
+
+/*! LOCALES */
+
+.mapasLocales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .casaCentral {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+
+        .logoChaca {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                color: rgb(246, 180, 97);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+
+        .fotoChaca {
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 400px;
+            background-image: url("../img/cafelib.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            p {
+                margin: 10px;
+                padding: 5px;
+                border: solid;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 400px;
+                color: white;
+                background-color: rgb(246, 180, 97);
+            }
+
+        }
+    }
+
+    .datosChaca {
+        display: flex;
+        justify-content: space-around;
+
+        .contactoChaca {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.sucursales {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .sucDatos {
+        border: solid 2px $colorTerciario;
+        margin: 10px;
+        padding: 10px;
+
+        h3 {
+            color: black;
+            font-size: 24px;
+        }
+
+        p {
+            color: black;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+/*! CONTACTO */
+
+.formularioNews {
+    h3 {
+        margin: 20px 10px 20px 10px;
+        color: rgb(246, 180, 97);
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    p {
+        width: 70%;
+        margin: 5px;
+        padding: 5px;
+        color: white;
+        background-color: rgb(246, 180, 97);
+        font-size: 20px;
+        font-weight: 300;
+        border: solid;
+        text-align: justify;
+    }
+}
+
+.fomularioDatos {
+    padding: 10px;
+    margin-bottom: 20px;
 }

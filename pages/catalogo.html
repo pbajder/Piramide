@@ -5,109 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Catalogo</title>
 </head>
 
-<header>
-    <a href="../index.html">
-        <h1>PIRAMIDE LIBROS</h1>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="./catalogo.html">Libros</a></li>
-            <li><a href="./ranking.html">Ranking</a></li>
-            <li><a href="./locales.html">Locales</a></li>
-            <li><a href="./contactos.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+<body>
 
-<main>
-    <div class="grillaContenedor">
-        <section class="rankingMes">
-            <div class="wrapper">
-                <div class="box a">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box b">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box c">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box d">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box e">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box f">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box g">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box h">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box i">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box j">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box k">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box l">
-                    <h3>Nombre Libro</h3>
+    <header>
+        <nav class="navbar navbar-expand-lg barraNar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Pirámide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalogo.html">Libros</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="./ranking.html">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <section class="rankingAnual">
-            <div class="wrapper">
-                <div class="box m">
-                    <h3>Nombre Libro</h3>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grillaContenedor">
+            <section class="cataDestacados">
+                <h1>Los destacados del mes</h1> 
+                <div class="wrapper">
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/dickensvc.jpg" class="card-img-top" alt="great expectations">
+                        <div class="card-body">
+                            <h5 class="card-title">Grandes Expectativas</h5>
+                            <p class="card-text">Charles Dickens (1834)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/rayuelavc.jpg" class="card-img-top" alt="Rayuela">
+                        <div class="card-body">
+                            <h5 class="card-title">Rayuela</h5>
+                            <p class="card-text">Julio Cortázar (1972)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/borgesvc.jpg" class="card-img-top" alt="Aleph">
+                        <div class="card-body">
+                            <h5 class="card-title">El Aleph</h5>
+                            <p class="card-text">Jorge Luis Borges (1955)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/itvc.jpg" class="card-img-top" alt="It">
+                        <div class="card-body tarjetaLibro">
+                            <h5 class="card-title">It</h5>
+                            <p class="card-text">Stephen King (1984)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/cienvc.jpg" class="card-img-top" alt="100 años de soledad">
+                        <div class="card-body">
+                            <h5 class="card-title">100 Años de Soledad</h5>
+                            <p class="card-text">Gabriel García Márquez (1975)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/spqvcr.jpg" class="card-img-top" alt="tapa spqr">
+                        <div class="card-body">
+                            <h5 class="card-title">SPQR</h5>
+                            <p class="card-text">Mary Beard
+                                (2015)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/oct17vc.jpg" class="card-img-top" alt="tapa 1917">
+                        <div class="card-body">
+                            <h5 class="card-title">1917</h5>
+                            <p class="card-text"> Rex A. Wade (1997)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/draculavc.jpg" class="card-img-top" alt="tapa Dracula">
+                        <div class="card-body">
+                            <h5 class="card-title">Dracula</h5>
+                            <p class="card-text">Bram Stoker (1897)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="box n">
-                    <h3>Nombre Libro</h3>
+            </section>
+            <section class="cataSinfoto">
+                <h3>Todos nuestros libros</h3>
+                <div class="wrapper cataTodos">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">La Felicidad</h5>
+                            <p class="card-text">Gabriel Pérez (2018)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                          <h5 class="card-title">El Largo Adiós</h5>
+                          <p class="card-text">Raymond Chandler (1942)</p>
+                          <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                      </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">No Logo</h5>
+                            <p class="card-text">Naomi Klein (1999)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">El Extranjero</h5>
+                            <p class="card-text">Albert Camus (2021)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fortuna</h5>
+                            <p class="card-text">Hernán Díaz (2023)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">La Mujer Que Soy</h5>
+                            <p class="card-text">Britney Spears (2018)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">La Felicidad</h5>
+                            <p class="card-text">Gabriel Pérez (2018)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                          <h5 class="card-title">El Largo Adiós</h5>
+                          <p class="card-text">Raymond Chandler (1942)</p>
+                          <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                      </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">No Logo</h5>
+                            <p class="card-text">Naomi Klein (1999)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">El Extranjero</h5>
+                            <p class="card-text">Albert Camus (2021)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fortuna</h5>
+                            <p class="card-text">Hernán Díaz (2023)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">La Mujer Que Soy</h5>
+                            <p class="card-text">Britney Spears (2018)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">No Logo</h5>
+                            <p class="card-text">Naomi Klein (1999)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body cataTitulo">
+                            <h5 class="card-title">El Extranjero</h5>
+                            <p class="card-text">Albert Camus (2021)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fortuna</h5>
+                            <p class="card-text">Hernán Díaz (2023)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">La Mujer Que Soy</h5>
+                            <p class="card-text">Britney Spears (2018)</p>
+                            <a href="#" class="btn btn-dark btn-sm">Comprar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="box o">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box p">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box q">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box r">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box s">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box t">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box u">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box v">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box w">
-                    <h3>Nombre Libro</h3>
-                </div>
-                <div class="box x">
-                    <h3>Nombre Libro</h3>
-                </div>
-            </div>
-        </section>
-        <div class="rankingAside">
-            <section>
-                <div class="asideMensual">
+            </section>
+            <section class="cataListado">
+                <div>
                     <h3>Géneros</h3>
                 </div>
                 <div class="asideGeneros">
@@ -122,93 +245,44 @@
                         <li><a href=""></a>Infantil</li>
                     </ul>
                 </div>
-                <div class="asideAnual">
+                <div>
                     <h3>Buscar</h3>
                 </div>
                 <div class="asideConsulta">
                     <div class="input-group input-group-sm">
                         <span class="input-group-text" id="input-group-sm-example">Autor</span>
-                        <input type="text" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm">
-                      </div>
+                        <input type="text" class="form-control" aria-label="Small input group"
+                            aria-describedby="input-group-sm">
+                    </div>
                     <div class="input-group input-group-sm">
                         <span class="input-group-text" id="input-group-sm-example">Título</span>
-                        <input type="text" class="form-control" aria-label="Small input group" aria-describedby="input-group-sm">
+                        <input type="text" class="form-control" aria-label="Small input group"
+                            aria-describedby="input-group-sm">
                     </div>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="button"
+                    autocomplete="off">Buscar</button>
+                </div>                
+                <div class="papelOnada">
+                    <h3>Formatos Digitales</h3>
+                    <p>Queridos lectores, queremos explicarles nuestra decisión de no utilizar ebooks. Valoramos la experiencia tangible de leer libros impresos, buscando preservar la conexión emocional entre el lector y la obra. Además, priorizamos la sostenibilidad ambiental al evitar la generación de residuos electrónicos. Reconocemos que cada lector tiene preferencias únicas y, al mantenernos en el ámbito de los libros impresos, aseguramos que todos encuentren una experiencia de lectura que se ajuste a cada una de sus necesidades. Agradecemos su comprensión y continuaremos ofreciendo obras de calidad en el formato que mejor refleje nuestros valores editoriales.</p>
                 </div>
-                <button type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Buscar</button>
             </section>
         </div>
-    </div>
-</main>
-<footer id="pie">
-    <a href="./pages/contactos.html">
-        <h4>Grupo Piramides</h4>
+    </main>
+    <footer id="pie">
+        <a href="./pages/contactos.html">
+            <h4>Grupo Piramides</h4>
+        </a>
         <div>
-            <a href=""><img src="../img/insta.png" alt="insta"></a>
+            <a href=""><img src="../img/insta.png" alt="Instagam"></a>
             <a href=""><img src="../img/twitter.png" alt="twitter"></a>
             <a href=""><img src="../img/face.png" alt="whatsapp"></a>
         </div>
-</footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-<!--
-<body>
-    <header>
-        <h1>PIRAMIDE LIBROS</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./catalogo.html">Libros</a></li>
-                <li><a href="./ranking.html">Ranking</a></li>
-                <li><a href="./locales.html">Locales</a></li>
-                <li><a href="./contactos.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="grillaCatalogo">
-            <div class="generosCatalogo">
-                <h2>Arte</h2>
-                <h2>Autoayuda</h2>
-                <h2>Deportes</h2>
-                <h2>Derecho</h2>
-                <h2>Gastronomía</h2>
-                <h2>Literatura</h2>
-                <h2>Humanidades</h2>
-                <h2>Infantil</h2>
-            </div>
-            <div class="librosCatalogo">
-                <img src="../img/biblia.jpg" alt="Libro1"> </a>
-                <img src="../img/biblia.jpg" alt="Libro2"> </a>
-                <img src="../img/biblia.jpg" alt="Libro3"> </a>
-                <img src="../img/biblia.jpg" alt="Libro4"> </a>
-                <img src="../img/biblia.jpg" alt="Libro5"> </a>
-                <img src="../img/biblia.jpg" alt="Libro6"> </a>
-                <img src="../img/biblia.jpg" alt="Libro7"> </a>
-                <img src="../img/biblia.jpg" alt="Libro8"> </a>
-                <img src="../img/biblia.jpg" alt="Libro1"> </a>
-                <img src="../img/biblia.jpg" alt="Libro2"> </a>
-                <img src="../img/biblia.jpg" alt="Libro3"> </a>
-                <img src="../img/biblia.jpg" alt="Libro4"> </a>
-                <img src="../img/biblia.jpg" alt="Libro5"> </a>
-                <img src="../img/biblia.jpg" alt="Libro6"> </a>
-                <img src="../img/biblia.jpg" alt="Libro7"> </a>
-                <img src="../img/biblia.jpg" alt="Libro8"> </a>
-            </div>
-        </div>
-    </main>
-
-    <footer id="pie">
-        <a href="./pages/contactos.html">
-            <h4>Grupo Piramides</h4>
-            <div>
-                <a href=""><img src="../img/insta.png" alt="insta"></a>
-                <a href=""><img src="../img/twitter.png" alt="twitter"></a>
-                <a href=""><img src="../img/face.png" alt="whatsapp"></a>
-            </div>
-    </footer>
-
-</body>

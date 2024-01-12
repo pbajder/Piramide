@@ -1,56 +1,8 @@
-@media screen and (max-width:1070px) {
+@media screen and (max-width:1000px) {
 
-    header {
-        height: 110px;
-        background-color: rgb(246, 180, 97);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .barraNar {
+        height: auto;
     }
-
-    header div a {
-        text-decoration: none;
-    }
-
-    header a h1 {
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        font-size: 44px;
-        font-weight: 700;
-    }
-
-    header nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header nav ul {
-        list-style: none;
-        display: flex;
-        text-align: center;
-
-    }
-
-    header nav ul li {
-        margin: 5px;
-
-    }
-
-    header nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 300;
-    }
-
-
-
 
     .hero {
         margin: 5px 5px 5px 0px;
@@ -195,58 +147,88 @@
         text-decoration: none;
     }
 
+/*! CATALOGO */
 
+    .grillaContenedor{
+        gap: 10px;
+    
+        .cataDestacados {
+            h1{
+                text-align: center;
+            }
+        }
+        .cataSinfoto {
+            h3{
+                text-align: center;
+            }
+        }
+    }
+     
+}
+
+
+@media screen and (max-width:760px) {
+
+    .grillaContenedor{
+            
+        .cataDestacados {
+            h1{
+                font-size: 36px;
+            }
+        }
+        .cataSinfoto {
+            h3{
+                font-size: 32px;
+                color: $colorSecundario;
+                background-color: $colorPrincipal;
+            }
+        }
+        .cataListado {
+  
+            div {
+                h3 {
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+            }
+    
+            .asideGeneros {
+                ul {
+   
+                    li {
+                        font-size: 14px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+        .papelOnada {
+
+            h3 {
+                color: $colorPrincipal;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+                font-weight: 300;
+                margin: 10px;
+            }
+
+            p {
+                padding: 10px;
+                color: white;
+                background-color: #444;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+        }
+    }
 }
 
 @media screen and (max-width:720px) {
 
-    header {
-        height: 90px;
-        background-color: rgb(246, 180, 97);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header a {
-        text-decoration: none;
-    }
-
-    header a h1 {
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 1500;
-    }
-
-    header nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header nav ul {
-        list-style: none;
-        display: flex;
-        text-align: center;
-
-    }
-
-    header nav ul li {
-        margin: 5px;
-
-    }
-
-    header nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-       
+    .barraNar {
+        height: auto;
     }
 
     .hero {
@@ -379,58 +361,32 @@
 
 }
 
+@media screen and (max-width:620px) {
+    .grillaContenedor {
+        margin-top: 10px;
+        height: auto;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 @media screen and (max-width:600px) {
 
-    header {
-        height: 190px;
-        background-color: rgb(246, 180, 97);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
-
-    header a {
-        text-decoration: none;
-    }
-
-    header a h1 {
-        text-decoration: none;
-        margin: 10px;
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    header nav ul {
-        padding: 0px;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;       
-    }
-
-    header nav ul li {       
-        margin: 5px; 
-    }
-
-    header nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-    }
-.hero {
-        width: 100%;
-        height: auto;
-        background-image: url("../img/camellov2.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        text-align: center;
-    }
+    .barraNar {
+            height: auto;
+        }
+    .hero {
+            width: 100%;
+            height: auto;
+            background-image: url("../img/camellov2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            text-align: center;
+        }
 
     .hero h2 {
         margin: 10px;
@@ -441,3 +397,42 @@
         font-size: 34px;
         font-weight: 600;
     }
+}
+
+@media screen and (max-width:420px) {
+    .grillaContenedor{
+            
+        .cataDestacados {
+            h1{
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+        }
+        .cataSinfoto {
+            h3{
+                font-size: 28px;
+                color: $colorSecundario;
+                background-color: $colorPrincipal;
+                margin-bottom: 15px;
+            }
+        }
+        .cataListado {
+  
+            div {
+                h3 {
+                    font-size: 22px;
+                    
+                }
+            }
+    
+            .asideGeneros {
+                ul {
+   
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

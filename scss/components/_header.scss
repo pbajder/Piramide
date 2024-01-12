@@ -1,40 +1,17 @@
-header{
-    height: 120px;
-    background-color: rgb(246, 180, 97);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.barraNar {
+    background-color: $colorPrincipal;
+    height: 80px;
 
-    a{
-        text-decoration: none;
-        h1{
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-            color: #fff;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-size: 54px;
-            font-weight: 900;
-
-        }
+    .barraPira a {
+        color: #fff;
+        font-size: 32px;
     }
-}
-nav{
-    ul{
-        list-style: none;
-        display: flex;
-        text-align: center;
-        li{
-            margin: 10px 20px 10px 20px;
-            a{
-                text-decoration: none;
-                color: white;
-                font-size: 18px;
-                font-weight: 400;
 
-            }
-        }
+    a {
+        color: #fff;
+    }
+
+    button {
+        color: #fff;
     }
 }

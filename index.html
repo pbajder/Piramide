@@ -1,142 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <!--configuracion - etiquetas - abriertas o cerradas (casi todas)-->
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--escalas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--  <link rel="stylesheet" href="./css/estilos.css">  -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Libros</title>
 </head>
 
-<body> <!--todo lo visible-->
+<body>
     <header>
-        <a href="./index.html">
-            <h1>PIRAMIDE LIBROS</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="./pages/catalogo.html">Libros</a></li>
-                <li><a href="./pages/ranking.html">Ranking</a></li>
-                <li><a href="./pages/locales.html">Locales</a></li>
-                <li><a href="./pages/contactos.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg barraNar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Pirámide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/catalogo.html">Libros</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="./pages/ranking.html">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
-    <main> 
+    <main>
         <section class="hero">
-            <h2>Tu próxima aventura literaria</h2><!--jerarquia-->
-        </section>
-        <section class="ranking">
-            <div>
-                <a href="./pages/ranking.html">
-                    <h2>Los 100 Libros Más Leídos Este Mes</h2>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam earum
-                    corporis accusantium sed incidunt quibusdam aspernatur veniam! Consequatur repellendus saepe quo
-                    sint libero quia similique rerum, commodi delectus, quaerat ducimus. Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Autem nam nostrum odio, eveniet quisquam optio ex vero cum eaque.
-                    Minima alias totam, corporis maxime laboriosam harum sunt saepe neque repellat.</p>
-            </div>
-            <a href="./pages/ranking.html"> <img src="./img/biblio.jpg" alt=""> </a>
-
-        </section>
-
-        <section class="generos">
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Arte</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Autoayuda</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Deportes</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Derecho</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Gastronomía</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Literatura</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Humanidades</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
-            <div>
-                <a href="./pages/catalogo.html">
-                    <h3>Infantil</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsam doloribus, quisquam ut ab
-                    doloremque odio quia sequi consequuntur incidunt illo veniam obcaecati deserunt quos, repellendus,
-                    et hic voluptatibus excepturi.</p>
-            </div>
+            <h1>Tu próxima aventura literaria</h1>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="asd" aria-label="Search">
+                <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
         </section>
         <section class="novedades">
             <div>
                 <h2>NOVEDADES</h2>
             </div>
-            <div class="listaNovedades">
-                <img src="./img/biblia.jpg" alt="Libro1"> </a>
-                <img src="./img/biblia.jpg" alt="Libro2"> </a>
-                <img src="./img/biblia.jpg" alt="Libro3"> </a>
-                <img src="./img/biblia.jpg" alt="Libro4"> </a>
-                <img src="./img/biblia.jpg" alt="Libro5"> </a>
-                <img src="./img/biblia.jpg" alt="Libro6"> </a>
-                <img src="./img/biblia.jpg" alt="Libro7"> </a>
-                <img src="./img/biblia.jpg" alt="Libro8"> </a>
+            <div class="conteNovedades">
+                <div class="listaNovedades">
+                    <a href="./pages/catalogo.html"><img src="./img/detectives.jpg" alt="detectives salvajes">Los
+                        detectives salvajes</a>
+                    <a href="./pages/catalogo.html"><img src="./img/stk2.jpg" alt="finder's kepper">Quién pierde
+                        paga</a>
+                    <a href="./pages/catalogo.html"><img src="./img/masacre.jpg" alt="walsh">Operación masacre</a>
+                    <a href="./pages/catalogo.html"><img src="./img/senda.jpg" alt="larsson">La senda oscura </a>
+                    <a href="./pages/catalogo.html"><img src="./img/sumision.jpg" alt="Houlebeck">Sumisión</a>
+                    <a href="./pages/catalogo.html"><img src="./img/francia.jpg" alt="natgeo">Francia - National
+                        Greographic</a>
+                    <a href="./pages/catalogo.html"><img src="./img/claus.jpg" alt="claus">Claus y Lucas</a>
+                    <a href="./pages/catalogo.html"><img src="./img/bob.jpg" alt="Bob Dylan">Crónicas</a>
+                    <a href="./pages/catalogo.html"><img src="./img/buko.jpg" alt="Charles Buwkoski">La senda del
+                        perdedor</a>
+                    <a href="./pages/catalogo.html"><img src="./img/ultimos.jpg" alt="Dicker">Los últimos días de
+                        nuestros padres</a>
+                </div>
+            </div>
+        </section>
+        <section class="ranking">
+            <a href="./pages/ranking.html">
+                <h2>LOS LIBROS MÁS LEÍDOS ESTE MES</h2>
+            </a>
+            <div>
+                <p>En nuestro ranking mensual, podemos descubrir el apasionante mundo de la literatura a través de los
+                    ojos de
+                    los lectores. Desde clásicos intemporales hasta éxitos
+                    contemporáneos, este ranking ofrece una variedad de géneros y estilos que han cautivado a
+                    lectores de todas las edades. Explora esta selección donde cada obra se ha destacado no solo por su
+                    calidad literaria, sino también por su capacidad para resonar con un amplio público.</p>
+                <div class="table-responsive tablaRanking">
+                    <table class="table table-bordered border-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Título</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Género</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>El Capital</td>
+                                <td>Karl Marx</td>
+                                <td>Economía</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
+        <section class="generos">
+            <h2>NUESTRO CATÁLOGO</h2>
+            <div class="conteGeneros">
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Arte</h3>
+                        <img src="./img/arte.jpg" alt="portada Arte">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Autoayuda</h3>
+                        <img src="./img/yoga.jpg" alt="portada Autoayuda">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Deportes</h3>
+                        <img src="./img/jordan.jpg" alt="portada Deportes">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Derecho</h3>
+                        <img src="./img/ley.jpg" alt="portada Derecho">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Gastronomía</h3>
+                        <img src="./img/burger.jpg" alt="portada Gastronomía">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Literatura</h3>
+                        <img src="./img/ring.jpg" alt="portada Literatura">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Humanidades</h3>
+                        <img src="./img/berlin.jpg" alt="portada Humanidades">
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/catalogo.html">
+                        <h3>Infantil</h3>
+                        <img src="./img/mario.jpg" alt="portada Infantil">
+                    </a>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer id="pie">
         <a href="./pages/contactos.html">
-            <h4>Grupo Piramides</h4>
-            <div>
-                <a href=""><img src="./img/insta.png" alt="insta"></a>
-                <a href=""><img src="./img/twitter.png" alt="twitter"></a>
-                <a href=""><img src="./img/face.png" alt="whatsapp"></a>
-            </div>
+            <h4>Grupo Pirámides</h4>
+        </a>
+        <div>
+            <a href=""><img src="./img/insta.png" alt="Instagam"></a>
+            <a href=""><img src="./img/twitter.png" alt="twitter"></a>
+            <a href=""><img src="./img/face.png" alt="whatsapp"></a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
