@@ -27,6 +27,41 @@ $colorTerciario: chocolate;
     color: #444;
 }
 
+.griCatalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    grid-row-gap: 20px;
+
+    .contCatalogo {
+       
+        a {
+            text-decoration: none;
+
+            h3 {
+                margin: 10px;
+                color: black;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            img {
+                padding: 10px;
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+
+    }
+}
+
+
+
 
 
 
