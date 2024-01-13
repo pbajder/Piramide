@@ -70,10 +70,7 @@
                 }
             }
         }
-
-
     }
-
 }
 
 .ranking {
@@ -114,7 +111,6 @@
             font-weight: 400;
         }
     }
-
 }
 
 .generos {
@@ -180,7 +176,7 @@
             h3 {
                 color: rgb(246, 180, 97);
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 22px;
+                font-size: 26px;
                 font-weight: 400;
                 margin: 10px;
                 text-align: justify;
@@ -213,10 +209,10 @@
         }
 
         div {
-            h3 {
+            h4 {
                 color: rgb(246, 180, 97);
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 34px;
+                font-size: 28px;
                 font-weight: 500;
                 margin: 10px;
                 text-align: justify;
@@ -234,10 +230,10 @@
 
         .papelOnada {
 
-            h3 {
+            h4 {
                 color: $colorPrincipal;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 30px;
+                font-size: 28px;
                 font-weight: 400;
                 margin: 10px;
             }
@@ -348,6 +344,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    .sucChaca{
+        display: none;
+    }
 
     .sucDatos {
         border: solid 2px $colorTerciario;
