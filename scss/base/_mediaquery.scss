@@ -6,6 +6,9 @@
         h1 {
             font-size: 72px;
             font-weight: 400;
+            &:hover {
+                color: nth($colores, 2);
+            }
         }
     }
 
@@ -166,6 +169,9 @@
         h1 {
             font-size: 62px;
             font-weight: 400;
+            &:hover {
+                color: nth($colores, 2);
+            }
         }
     }
 
@@ -343,6 +349,21 @@
             }
         }
     }
+    .formularioNews {
+
+        h1 {
+            margin: 20px 10px 20px 10px;
+            color: rgb(246, 180, 97);
+            font-size: 30px;
+            font-weight: 500;
+        }
+    
+        p {
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+
 }
 
 
@@ -350,7 +371,7 @@
 @media screen and (max-width:760px) {
 
     footer {
-        width: 100%;
+        width: 99%;
         padding: 10px;
         margin: 5px;
         background-color: white;
@@ -450,7 +471,6 @@
     }
 
     footer {
-        width: 100%;
         padding: 10px;
         margin: 5px;
         background-color: white;
@@ -635,6 +655,22 @@
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
+    .formularioNews {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 28px;
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: 200;
         }
     }
 }

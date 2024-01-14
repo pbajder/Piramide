@@ -4,3 +4,26 @@
     box-sizing: border-box;
 }
 
+$colorPrincipal:rgb(246, 180, 97);
+$colorSecundario: #fff;
+$colorTerciario: chocolate;
+
+$colores: black, white, #444, yellow;
+
+//! EXT
+
+%flexArcenter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+//! MIX
+
+@mixin flex($flex, $direction, $justy, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justy;
+    align-items: $align;    
+};
+
